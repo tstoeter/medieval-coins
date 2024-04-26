@@ -225,7 +225,7 @@ for c in coin_templates:
     df["Coin_File"] = filename
     
     for sim in metrics:
-        m, r, rimg, degs, vals = bisection_sim(cv1, cv2, metrics[sim], rr)
+        m, r, rimg, degs, vals = sim_max_rot(cv1, cv2, metrics[sim], rr)
         df["Sim_" + sim] = m
         
         locsimg = local_sim(cv1,rimg,metrics[sim],rr)

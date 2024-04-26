@@ -1,3 +1,10 @@
+# Project specific ignores
+data/**
+data/*.zip
+output/**
+results/**
+!results/labels/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

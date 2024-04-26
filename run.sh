@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+set -eo pipefail
+
 # from https://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself
 export base="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 

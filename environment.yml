@@ -1,0 +1,9 @@
+name: coins
+dependencies:
+  - numpy
+  - opencv
+  - scipy
+  - pandas
+  - scikit-image
+  - scikit-learn
+  - matplotlib
