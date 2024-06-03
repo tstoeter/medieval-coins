@@ -70,7 +70,7 @@ resulting data and figures from analysis are saved in directory `results/`.
 
 ## References
 
-[1] Original data publication (https://doi.org/10.5334/joad.116)\
+[1] Original data publication (https://doi.org/10.5334/joad.116) <br />
 [2] Original data repository (https://doi.org/10.24406/fordatis/210)
 
 
