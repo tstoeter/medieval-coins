@@ -13,7 +13,7 @@ An overview of the coin processing pipeline is presented in the Figure below.
 Data is flowing from left to right. Following a preprocessing step, coins are
 spatially aligned before various global and local similarity measures are
 computed. Finally, the results are analysed by their similarity distributions
-and a coin classification task.
+and using a coin classification task.
 
 ```mermaid
 flowchart LR
