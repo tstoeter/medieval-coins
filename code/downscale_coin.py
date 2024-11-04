@@ -12,7 +12,7 @@ filename = sys.argv[2]
 
 outp_path = outp_path + "/coins_" + str(target_ppmm) + "ppmm/"
 if not os.path.exists(outp_path):
-    os.makedirs(outp_path)
+    os.makedirs(outp_path, exist_ok=True)
 outf = outp_path + os.path.basename(filename).removesuffix(".tif") + "_" + str(target_ppmm) + "ppmm.npy"
 
 print("Downscaling " + filename + " to " + outf + " at " + str(target_ppmm))

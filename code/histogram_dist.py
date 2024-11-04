@@ -19,7 +19,7 @@ inp_path = outp_path + "/correct_bending/"
 
 outp_path = outp_path + "/histogram_dist/"
 if not os.path.exists(outp_path):
-    os.makedirs(outp_path)
+    os.makedirs(outp_path, exist_ok=True)
 outf = outp_path + os.path.basename(filename).removesuffix(".npy")
 
 def transform_coordinates(c, x, u):

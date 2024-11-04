@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
     outp_path = outp_path + "/detected_coins/"
     if not os.path.exists(outp_path):
-        os.makedirs(outp_path)
+        os.makedirs(outp_path, exist_ok=True)
     outf = outp_path + os.path.basename(filename).removesuffix(".npy") + "_detections" + ".csv"
     
     out_df = pd.DataFrame()

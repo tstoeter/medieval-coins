@@ -10,7 +10,7 @@ filename = sys.argv[1]
 
 outp_path = outp_path + "/correct_bending/"
 if not os.path.exists(outp_path):
-    os.makedirs(outp_path)
+    os.makedirs(outp_path, exist_ok=True)
 outf = outp_path + os.path.basename(filename).removesuffix(".npy")
 
 print("Correct bending for " + filename)
